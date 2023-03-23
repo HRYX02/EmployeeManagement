@@ -1,0 +1,20 @@
+server:
+  port: 80
+
+spring:
+  datasource:
+    druid:
+      name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/employeemanagement
+      username: root
+      password: Sxx15963559164
+
+mybatis-plus:
+  global-config:
+    db-config:
+      #设置自增策略
+      id-type: auto
+  #开启mp日志
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  type-enums-package: com.sxx.enums
