@@ -11,8 +11,9 @@ import org.springframework.web.bind.annotation.*;
  * @create 2023-02-24-16:37
  */
 
+@CrossOrigin("http://localhost:8080")
 @RestController
-@RequestMapping("/staff")
+@RequestMapping("/em/staff")
 public class StaffController {
 
     @Autowired

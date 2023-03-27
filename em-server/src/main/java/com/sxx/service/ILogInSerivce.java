@@ -8,4 +8,5 @@ import com.sxx.pojo.LogIn;
  * @create 2023-03-08-19:04
  */
 public interface ILogInSerivce extends IService<LogIn> {
+    LogIn logInCheck(LogIn logIn);
 }
