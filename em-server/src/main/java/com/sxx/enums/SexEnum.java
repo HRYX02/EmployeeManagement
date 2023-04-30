@@ -9,7 +9,7 @@ import lombok.Getter;
  */
 @Getter
 public enum SexEnum {
-    FEMAIL(0,"女"),
+    FEMALE(0,"女"),
     MAIL(1,"男");
 
     @EnumValue

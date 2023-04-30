@@ -1,7 +1,7 @@
 package com.sxx.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.sxx.pojo.Staff;
+import com.sxx.entity.StaffPO;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -12,6 +12,6 @@ import org.springframework.stereotype.Repository;
 
 @Mapper
 @Repository
-public interface StaffDao extends BaseMapper<Staff>{
+public interface StaffDao extends BaseMapper<StaffPO>{
 
 }

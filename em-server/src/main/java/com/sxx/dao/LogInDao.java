@@ -1,9 +1,8 @@
 package com.sxx.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.sxx.pojo.LogIn;
+import com.sxx.entity.LogInPO;
 import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Repository;
 
 /**
  * @author SHIXINXI
@@ -11,6 +10,5 @@ import org.springframework.stereotype.Repository;
  */
 
 @Mapper
-@Repository
-public interface LogInDao extends BaseMapper<LogIn> {
+public interface LogInDao extends BaseMapper<LogInPO> {
 }

@@ -1,7 +1,7 @@
 package com.sxx.controller;
 
 import com.sxx.controller.utils.Protocol;
-import com.sxx.pojo.Staff;
+import com.sxx.entity.StaffPO;
 import com.sxx.service.IStaffService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -32,7 +32,7 @@ public class StaffController {
         return new Protocol(true,staffService.removeById(id));
     }
     @PostMapping
-    public Protocol AddStaff(@RequestBody Staff staff){
+    public Protocol AddStaff(@RequestBody StaffPO staff){
         return new Protocol(true,staffService.save(staff));
     }
 }

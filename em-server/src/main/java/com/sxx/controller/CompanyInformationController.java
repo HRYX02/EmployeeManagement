@@ -24,4 +24,12 @@ public class CompanyInformationController {
     public Protocol getEmployeesTotal(){
         return new Protocol(true,companyInformation.count());
     }
+
+    /**
+     * @description:查询公司男女比例
+     */
+    @GetMapping("/sc")
+    public Protocol geyScale(){
+        return new Protocol(true,companyInformation.genderRatio());
+    }
 }

@@ -1,7 +1,7 @@
 package com.sxx.dao;
 
 import com.sxx.enums.SexEnum;
-import com.sxx.pojo.Staff;
+import com.sxx.entity.StaffPO;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -24,7 +24,7 @@ public class StaffDaoTest {
 
     @Test
     void insertStaff(){
-        Staff staff = new Staff(2,"史鑫玺", SexEnum.MAIL,"123");
+        StaffPO staff = new StaffPO(2,"史鑫玺", SexEnum.MAIL,"123");
         System.out.println(staffDao.insert(staff));
     }
 }
